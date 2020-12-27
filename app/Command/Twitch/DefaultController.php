@@ -74,9 +74,7 @@ class DefaultController extends CommandController
 
         if (strpos($message, "php") !== false) {
             $client->joinChannel($this->getApp()->config->channel_name);
-            $client->send("PRIVMSG #{$this->getApp()->config->twitch_user} :Easter egg ;) founds! \r\n");
-
-            $this->printMessage($message);
+            $client->send("PRIVMSG #{$this->getApp()->config->twitch_user} :Xeroque roumes of PHP is here ;) \r\n");
         }
     }
 }
